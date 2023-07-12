@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   margin: 0;
   background-color: rgb(21, 21, 21);
   color: rgb(254, 254, 254);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   max-height: 100vh;
   max-width: 100vw;
@@ -58,11 +58,7 @@ p {
   margin-bottom: 80px;
 }
 .about-content span {
-  border-bottom: 5px solid;
-  border-color: rgb(78, 224, 160);
-  /* text-decoration: underline;
-  text-decoration-color: rgb(78, 224, 160) !important;
-  text-underline-offset: 20px !important; */
+  border-bottom: 4px solid rgb(78, 224, 160);
 }
 .about-content p {
   padding-right: 250px;
@@ -70,15 +66,15 @@ p {
 }
 .about-content a {
   font-size: small;
-  text-decoration: underline;
-  text-decoration-color: rgb(78, 224, 160) !important;
-  text-underline-offset: 10px !important;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgb(78, 224, 160);
   color: rgb(254, 254, 254);
   font-weight: 500;
 }
 .about img {
   width: 400px;
-  background-color: rgb(36,36,36);
+  background-color: rgb(36, 36, 36);
 }
 .skill-container {
   display: grid;
@@ -111,8 +107,9 @@ p {
 
 .project-header a {
   font-size: small;
-  text-decoration: underline rgb(78, 224, 160) !important;
-  text-underline-offset: 10px !important;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgb(78, 224, 160);
   color: rgb(254, 254, 254);
   font-weight: 500;
 }
@@ -142,13 +139,26 @@ p {
   margin-top: 20px;
   list-style-type: none;
 }
-.project-container .project-grid li {
+.project-container .project-grid .languages li {
   margin-right: 30px;
   color: rgb(187, 187, 187);
 }
 .project-grid {
   margin-bottom: 20px;
 }
+.project-container .project-grid .view {
+  display: flex;
+  list-style-type: none;
+  margin-top: 20px;
+}
+.project-container .project-grid .view li {
+  font-weight: bold;
+  margin-right: 30px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgb(78, 224, 160);
+  color: rgb(254, 254, 254);
+}
+
 footer {
   background-color: #242424;
 }
@@ -196,12 +206,11 @@ textarea {
   resize: none;
 }
 
-.errorMessage { 
-  font-size: .7rem;
+.errorMessage {
+  font-size: 0.7rem;
   margin: 5px 0 10px 0;
   color: red;
 }
-
 
 .contact-content-right button {
   border: none;
@@ -212,8 +221,11 @@ textarea {
   font-weight: bold;
   text-align: end;
   color: rgb(187, 187, 187);
-  text-decoration: underline rgb(78, 224, 160) !important;
-  text-underline-offset: 10px !important;
+}
+
+#button-text {
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgb(78, 224, 160);
 }
 
 .footer-logo {
@@ -266,7 +278,7 @@ textarea {
   .about img {
     width: 281px;
     height: 400px;
-    background-color: rgb(36,36,36);
+    background-color: rgb(36, 36, 36);
   }
   .about-content {
     text-align: center;
@@ -277,9 +289,7 @@ textarea {
     margin-bottom: 40px;
   }
   .about-content span {
-    /* text-decoration: underline;
-    text-decoration-color: rgb(78, 224, 160) !important;
-    text-underline-offset: 10px !important; */
+    border-bottom: 4px solid rgb(78, 224, 160);
   }
   .about-content p {
     padding-right: 0;
@@ -287,9 +297,8 @@ textarea {
     margin-bottom: 40px;
   }
   .about-content a {
-    text-decoration: underline !important;
-    text-decoration-color: rgb(78, 224, 160) !important;
-    text-underline-offset: 10px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(78, 224, 160);
   }
   .skill-container {
     grid-template-columns: auto;
@@ -321,23 +330,22 @@ textarea {
     margin: 50px 0;
   }
 
-  .project-container .project-grid li {
+  .project-container .project-grid .languages li {
     font-size: small;
   }
   .project-grid {
     margin-bottom: 20px;
   }
-  .view {
+  .project-container .project-grid .view {
     display: flex;
     list-style-type: none;
     margin-top: 20px;
-    margin-right: 30px;
   }
   .project-container .project-grid .view li {
     font-weight: bold;
-    text-decoration: underline 2px solid !important;
-     text-decoration-color: rgb(78, 224, 160) !important;;
-    text-underline-offset: 10px !important;
+    margin-right: 30px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(78, 224, 160);
     color: rgb(254, 254, 254);
   }
 
@@ -368,7 +376,7 @@ textarea {
     font-size: 2.5rem;
     margin-bottom: 25px;
   }
-  
+
   .contact-content-right {
     display: flex;
     flex-direction: column;
@@ -386,18 +394,17 @@ textarea {
     font-weight: bold;
     text-align: end;
     color: rgb(187, 187, 187);
-    text-decoration: underline !important;
-    text-decoration-color: rgb(78, 224, 160) !important;
-    text-underline-offset: 10px !important;
   }
-  
-  
-  .errorMessage { 
-    font-size: .6rem;
+  #button-text {
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgb(78, 224, 160);
+  }
+  .errorMessage {
+    font-size: 0.6rem;
     margin: 5px 0 10px 0;
     color: rgb(244, 17, 17);
   }
-  
+
   .footer-logo {
     display: flex;
     flex-direction: column;
@@ -415,8 +422,8 @@ textarea {
     margin-right: 20px;
   }
 
-  .footer-social a{
+  .footer-social a {
     text-decoration: none;
-    color:rgb(254, 254, 254)
+    color: rgb(254, 254, 254);
   }
 }
