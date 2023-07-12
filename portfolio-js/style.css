@@ -58,7 +58,8 @@ p {
   margin-bottom: 80px;
 }
 .about-content span {
-  text-decoration: underline rgb(78, 224, 160) !important;
+  text-decoration: underline;
+  text-decoration-color: rgb(78, 224, 160) !important;
   text-underline-offset: 20px !important;
 }
 .about-content p {
@@ -67,7 +68,8 @@ p {
 }
 .about-content a {
   font-size: small;
-  text-decoration: underline rgb(78, 224, 160) !important;
+  text-decoration: underline;
+  text-decoration-color: rgb(78, 224, 160) !important;
   text-underline-offset: 10px !important;
   color: rgb(254, 254, 254);
   font-weight: 500;
@@ -258,7 +260,6 @@ textarea {
     align-items: center;
     bottom: 60px;
     height: 100%;
-    margin-bottom: 50px;
   }
   .about img {
     width: 281px;
@@ -274,7 +275,8 @@ textarea {
     margin-bottom: 40px;
   }
   .about-content span {
-    text-decoration: underline rgb(78, 224, 160) !important;
+    text-decoration: underline;
+    text-decoration-color: rgb(78, 224, 160) !important;
     text-underline-offset: 10px !important;
   }
   .about-content p {
@@ -283,7 +285,8 @@ textarea {
     margin-bottom: 40px;
   }
   .about-content a {
-    text-decoration: underline rgb(78, 224, 160) !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgb(78, 224, 160) !important;
     text-underline-offset: 10px;
   }
   .skill-container {
@@ -330,7 +333,8 @@ textarea {
   }
   .project-container .project-grid .view li {
     font-weight: bold;
-    text-decoration: underline 2px solid rgb(78, 224, 160) !important;
+    text-decoration: underline 2px solid !important;
+     text-decoration-color: rgb(78, 224, 160) !important;;
     text-underline-offset: 10px !important;
     color: rgb(254, 254, 254);
   }
@@ -380,7 +384,8 @@ textarea {
     font-weight: bold;
     text-align: end;
     color: rgb(187, 187, 187);
-    text-decoration: underline rgb(78, 224, 160) !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgb(78, 224, 160) !important;
     text-underline-offset: 10px !important;
   }
   
