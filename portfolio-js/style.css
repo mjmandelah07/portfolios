@@ -71,6 +71,7 @@ p {
   border-bottom: 2px solid rgb(78, 224, 160);
   color: rgb(254, 254, 254);
   font-weight: 500;
+  margin-right: 30px;
 }
 .about img {
   width: 400px;
