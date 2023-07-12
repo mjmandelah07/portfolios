@@ -21,5 +21,64 @@ mediaQuery.addEventListener("change", view);
 // inital state
 view(mediaQuery);
 
+const form = document.getElementById("messageForm");
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageTextarea = document.getElementById('message');
 
 
+
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const isNameValid = validateName();
+  const isEmailValid = validateEmail();
+  const isMessageValid = validateMessage();
+
+
+  if (isNameValid && isEmailValid && isMessageValid) {
+    // Form is valid, proceed with submission
+    form.submit();
+    form.reset();
+  }
+});
+
+const validateName = () => {
+  const nameValue = nameInput.value.trim();
+  const nameError = document.getElementById("nameError");
+  
+  if (nameValue === "") {
+    nameError.innerHTML = "Please enter a name";
+    return false;
+  } else {
+    nameError.innerHTML = "";
+    return true;
+  }
+};
+
+const validateEmail = () => {
+  const emailValue = emailInput.value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailError = document.getElementById("emailError");
+
+  if (emailValue === "" || !emailRegex.test(emailValue)) {
+    emailError.innerHTML = "Invalid email address";
+    return false;
+  } else {
+    emailError.innerHTML = "";
+    return true;
+  }
+};
+
+const validateMessage = () => {
+  const messageValue = messageTextarea.value.trim();
+  const messageError = document.getElementById("messageError");
+
+  if (messageValue === "") {
+    messageError.innerHTML = "Please enter your message";
+    return false;
+  } else {
+    messageError.innerHTML = "";
+    return true;
+  }
+};
