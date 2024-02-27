@@ -86,16 +86,45 @@ img:hover {
   width: 400px;
   background-color: rgb(36, 36, 36);
 }
-.skill-container {
+/* .skill-container {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 15px;
   margin: 0 0 60px 0;
+} */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Apply a fade-in animation to each skill block */
+/* .skill-container div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+/* Add the animation when the element is in view */
+/* .skill-container div.in-view {
+    opacity: 1;
+    transform: translateY(0);
+} */ 
+/* Style the skill block */
+.skill-block {
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+    transition: transform 0.2s;
+    animation: pop-up 0.3s ease-in-out; /* Add a pop-up animation */
+    animation-fill-mode: both;
 }
 
 .skill-container h2 {
   font-size: 2.2rem;
   padding: 20px 0;
+}
+.skill-container h2:hover {
+ color: rgb(78, 224, 160);
 }
 .hori {
   border: none;
@@ -156,11 +185,29 @@ img:hover {
 }
 .project-grid {
   margin-bottom: 20px;
+  /* opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease; */
 }
+
+/* Add the animation when the element is in view */
+/* .project-grid.in-view {
+    opacity: 1;
+    transform: translateY(0);
+} */
 .project-container .project-grid .view {
   display: flex;
   list-style-type: none;
   margin-top: 20px;
+}
+.project-container .project-grid img {
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+    border-radius: 10px;
+}
+.project-container .project-grid img:hover {
+  border-radius: 5%;
+     transform: scale(0.6);
 }
 .project-container .project-grid .view li {
   font-weight: bold;
@@ -319,7 +366,7 @@ textarea {
   .about-content .info {
     margin-bottom: 40px;
   }
-  .skill-container {
+  /* .skill-container {
     grid-template-columns: auto;
     gap: 15px;
     margin: 0 0 40px 0;
@@ -330,7 +377,10 @@ textarea {
   .skill-container h2 {
     padding: 15px 0;
     font-size: 2rem;
-  }
+  } */
+  .skill-container {
+    justify-content: center;
+}
   .hori {
     border: 1px inset;
     margin-bottom: 70px;
@@ -354,6 +404,9 @@ textarea {
   }
   .project-grid {
     margin-bottom: 20px;
+  }
+  .project-grid img{
+   border-radius: 10px;
   }
   .project-container .project-grid .view {
     display: flex;

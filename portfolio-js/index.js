@@ -1,3 +1,51 @@
+// // skills section
+// document.addEventListener("DOMContentLoaded", function () {
+//   const skillBlocks = document.querySelectorAll(".skill-container div");
+//   const options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 0.2,
+//   };
+
+//   const observer = new IntersectionObserver((entries, observer) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add("in-view");
+//         observer.unobserve(entry.target);
+//       }
+//     });
+//   }, options);
+
+//   skillBlocks.forEach((block) => {
+//     observer.observe(block);
+//   });
+// });
+
+
+// // project section
+// document.addEventListener("DOMContentLoaded", function () {
+//   const projectGrids = document.querySelectorAll(".project-grid");
+//   const options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 0.2,
+//   };
+
+//   const observer = new IntersectionObserver((entries, observer) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add("in-view");
+//         observer.unobserve(entry.target);
+//       }
+//     });
+//   }, options);
+
+//   projectGrids.forEach((grid) => {
+//     observer.observe(grid);
+//   });
+// });
+
+
 // Create a condition that targets viewports at least 768px wide
 const mediaQuery = window.matchMedia("(max-width: 768px)");
 
@@ -22,19 +70,15 @@ mediaQuery.addEventListener("change", view);
 view(mediaQuery);
 
 const form = document.getElementById("messageForm");
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const messageTextarea = document.getElementById('message');
-
-
-
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageTextarea = document.getElementById("message");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const isNameValid = validateName();
   const isEmailValid = validateEmail();
   const isMessageValid = validateMessage();
-
 
   if (isNameValid && isEmailValid && isMessageValid) {
     // Form is valid, proceed with submission
@@ -46,7 +90,7 @@ form.addEventListener("submit", (event) => {
 const validateName = () => {
   const nameValue = nameInput.value.trim();
   const nameError = document.getElementById("nameError");
-  
+
   if (nameValue === "") {
     nameError.innerHTML = "Please enter a name";
     return false;
