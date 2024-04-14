@@ -1,0 +1,90 @@
+.portfolio-section {
+  padding: 70px 0;
+}
+
+.portfolios a {
+  height: 100% !important;
+}
+
+.portfolios > a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    z-index: 2;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    background: rgba(0, 0, 0, 0.5);
+}
+.portfolios img {
+  transition: 0.3s all ease;
+  transform: scale(1);
+  height: 100% !important;
+}
+
+.portfolios a:hover img {
+  transform: scale(1.05);
+  filter: brightness(40%);
+}
+
+.portfolios {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.portfolios a {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.portfolios a:hover > #port {
+  color: #ffffff;
+  text-decoration: none;
+}
+.portfolios a:hover {
+  color: #030303;
+  text-decoration: none;
+}
+
+.portfolios a:hover .contents {
+  z-index: 3;
+  opacity: 1;
+  visibility: visible;
+}
+.portfolios .contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.3s all ease;
+}
+.portfolios a:hover .contents h3 #port {
+  color: #96bb7c;
+}
+.portfolios a:hover .contents h3 {
+  color: #88bd5a;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+.portfolios a {
+  height: auto !important;
+}
+.portfolios img {
+  height: auto !important;
+}
+
+}
+  

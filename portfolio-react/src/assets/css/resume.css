@@ -1,0 +1,43 @@
+.resume-section{
+    padding: 70px 0;
+}
+.resume-section h2{
+   font-size: 3rem;
+}
+.work {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+}
+.work .resume-meta {
+    font-size: 14px;
+    vertical-align: middle;
+}
+.work .resume-meta .icon {
+    margin-right: 10px;
+    color: #ccc;
+}
+.work h4 {
+    font-size: 18px;
+}
+.work .resume-meta .icon {
+    margin-right: 10px;
+    color: #ccc;
+}
+.work .resume-meta {
+    font-size: 14px;
+    vertical-align: middle;
+}
+.work .period {
+    margin-bottom: 7px;
+}
+.work .period > span {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    padding: 7px 20px;
+    border-radius: 30px;
+    background: rgba(150, 187, 124, 0.1);
+    color: #96bb7c;
+}

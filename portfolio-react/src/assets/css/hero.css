@@ -1,0 +1,70 @@
+.site-blocks-cover,
+.site-blocks-cover .row {
+  min-height: 600px;
+  height: calc(100vh);
+}
+.site-blocks-cover.overlay {
+  position: relative;
+}
+.bg-image {
+  background-image: url("../images/about-woman.jpg");
+  background-position: 50% -25px;
+}
+.site-blocks-cover.overlay:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.site-blocks-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position: center center;
+}
+.site-blocks-cover,
+.site-blocks-cover .row {
+  min-height: 600px;
+  height: calc(100vh);
+}
+
+.site-blocks-cover h1 {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.site-blocks-cover p {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  position: relative;
+  z-index: 10;
+}
+.site-blocks-cover span {
+  color: #96bb7c !important;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  position: relative;
+  z-index: 10;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .site-blocks-cover h1 {
+    font-size: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+ .hero-content {
+    padding-top: 5rem;
+  }
+}

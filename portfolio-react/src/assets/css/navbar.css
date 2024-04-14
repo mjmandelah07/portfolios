@@ -1,0 +1,100 @@
+.site-nav {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  padding: 20px 0 20px 0;
+}
+
+.site-nav a {
+  position: relative;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 3px;
+  /* position: absolute; */
+  width: 40px;
+  height: 40px;
+  margin-top: -4px;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+.navbar-toggler {
+  border: 1px none transparent;
+}
+.navbar-toggler-icon {
+  background-color: white;
+  color: white;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+.site-nav.scrolled.awake {
+  margin-top: 0px;
+  -webkit-transition: 0.3s all ease-out;
+  -o-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+.site-nav.scrolled {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: -130px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  -webkit-box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+.site-nav.scrolled .logo {
+  color: #000000 !important;
+  border-color: #000000;
+  top: -14px;
+  width: 45px;
+  position: absolute;
+}
+.site-nav .site-navigation a.active {
+  color: #ffffff;
+}
+.site-nav .site-navigation a:hover {
+  color: #ffffff;
+}
+.site-nav.scrolled .site-navigation a.active {
+  color: #96bb7c;
+}
+.site-nav.scrolled .site-navigation a {
+  color: #000000;
+}
+.site-nav.scrolled .site-navigation a:hover {
+  color: #96bb7c;
+}
+.site-nav .site-navigation a {
+  font-size: 14px;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav a {
+    color: white !important;
+  }
+  .site-nav.scrolled .site-navigation a {
+    color: #000 !important;
+  }
+  .site-nav.scrolled .site-navigation a.active {
+    color: #96bb7c;
+  }
+}
