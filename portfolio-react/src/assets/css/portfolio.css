@@ -1,90 +1,86 @@
 .portfolio-section {
   padding: 70px 0;
 }
+.portfolio-section .display-5 {
+    font-weight: 500;
+} 
 
-.portfolios a {
-  height: 100% !important;
+
+/* Showcase Card styling */
+.portfolio-section .card {
+    --bs-card-title-color: #202124;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: 0;
+    --bs-card-border-color: #dce0e5
+    --bs-card-border-radius: 0.4rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: 0.4rem;
+    --bs-card-cap-padding-y: 1.25rem;
+    --bs-card-cap-padding-x: 1.25rem;
+    --bs-card-cap-bg: #fff;
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: #606261;
+    --bs-card-bg: #606261;
+    color: #606261;
+    background-color: #fff;
+    border: var(--bs-card-border-width) solid #dce0e5;
+    border-radius: .4rem;
 }
-
-.portfolios > a:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    opacity: 0;
+.portfolio-section .card.overflow-hidden, .tiny-slider.overflow-hidden {
+    will-change: transform;
+}
+.portfolio-section .card.card-img-scale .card-img-scale-wrapper {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: relative;
+    overflow: hidden;
+}
+/* Initially hide the overlay and set transition properties */
+.portfolio-section .card.card-element-hover .hover-element {
     visibility: hidden;
-    height: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+}
+/* Show the overlay and adjust opacity when hovering over the card */
+.portfolio-section .card.card-element-hover:hover .hover-element {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.portfolio-section .card .card-img-overlay {
     z-index: 2;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-    background: rgba(0, 0, 0, 0.5);
 }
-.portfolios img {
-  transition: 0.3s all ease;
-  transform: scale(1);
-  height: 100% !important;
+.portfolio-section h5 {
+    font-size: calc(1.275rem + 0.3vw);
+    font-weight: 700;
+    color: #96bb7c;
 }
-
-.portfolios a:hover img {
-  transform: scale(1.05);
-  filter: brightness(40%);
+.portfolio-section .btn-white {
+    background: #96bb7c;
+    color: #fff;
 }
-
-.portfolios {
-  margin-bottom: 30px;
-  border-radius: 5px;
-  overflow: hidden;
-
-}
-.portfolios a {
-  overflow: hidden;
-  position: relative;
-  display: block;
-}
-.portfolios a:hover > #port {
-  color: #ffffff;
-  text-decoration: none;
-}
-.portfolios a:hover {
-  color: #030303;
-  text-decoration: none;
+.portfolio-section .card.card-img-scale .img-scale {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.001);
+    transform: scale(1.001);
 }
 
-.portfolios a:hover .contents {
-  z-index: 3;
-  opacity: 1;
-  visibility: visible;
+.portfolio-section .card.card-element-hover .card-text, .card.card-element-hover img {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.portfolios .contents {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  transition: 0.3s all ease;
-}
-.portfolios a:hover .contents h3 #port {
-  color: #96bb7c;
-}
-.portfolios a:hover .contents h3 {
-  color: #88bd5a;
-  opacity: 1;
+/* Scale and blur the image when hovering over the card */
+.portfolio-section .card.card-img-blur:hover .img-blur {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
 }
 
-@media screen and (max-width: 768px) {
-.portfolios a {
-  height: auto !important;
+.portfolio-section .card.card-img-scale:hover .img-scale {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
 }
-.portfolios img {
-  height: auto !important;
-}
-
-}
-  

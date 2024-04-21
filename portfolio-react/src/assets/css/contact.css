@@ -1,5 +1,6 @@
 .contact-section {
     padding: 70px 0;
+    overflow-x: hidden;
 }
 
 .contact-section h2 {
@@ -35,7 +36,3 @@ textarea.form-control {
     box-shadow: none;
     background: transparent;
 }
-/* .invalid-feedback{
-    font-size: 10px;
-    color: red;
-} */

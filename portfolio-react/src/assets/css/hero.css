@@ -5,6 +5,7 @@
 }
 .site-blocks-cover.overlay {
   position: relative;
+   overflow-x: hidden;
 }
 .bg-image {
   background-image: url("../images/about-woman.jpg");

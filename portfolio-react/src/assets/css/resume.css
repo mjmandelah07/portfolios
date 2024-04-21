@@ -1,5 +1,5 @@
 .resume-section{
-    padding: 70px 0;
+    padding: 70px 0 0 0;
 }
 .resume-section h2{
    font-size: 3rem;
@@ -40,4 +40,9 @@
     border-radius: 30px;
     background: rgba(150, 187, 124, 0.1);
     color: #96bb7c;
+}
+@media (min-width: 1199.98px) {
+.resume-section{
+    padding: 70px 0;
+}
 }

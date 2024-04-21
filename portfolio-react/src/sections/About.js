@@ -1,22 +1,15 @@
 import React from "react";
 import "../assets/css/about.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import aboutImage from "../assets/images/forabout.jpg";
-import myCv from "../assets/files/Mojisola-Oluwadamilola-Aramide_ Software Devloper.pdf";
+import myCv from "../assets/files/mojisola-aramide-resume_Software-developer.pdf";
 
 export default function About() {
   return (
-    <section className="site-section" id="about">
+    <section className="about-section" id="about">
       <Container>
         <Row className="align-items-center mb-5">
-          <Col
-            lg={7}
-            className="pe-lg-5 mb-5 mb-lg-0 wow fadeInUp"
-            data-wow-delay="0s"
-          >
+          <Col lg={7} className="pe-lg-5 mb-5 mb-lg-0 wow fadeInUp">
             <div className="img-wrap">
               <img
                 src={aboutImage}
@@ -25,7 +18,7 @@ export default function About() {
               />
             </div>
           </Col>
-          <Col lg={5} className="wow fadeInUp ps-lg-5" data-wow-delay=".5s">
+          <Col lg={5} className="wow fadeInUp ps-lg-5">
             <div className="section-heading">
               <h2 className="display-5 text-black">My Bio</h2>
             </div>

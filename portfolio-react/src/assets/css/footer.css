@@ -1,4 +1,5 @@
 .footer-section {
+   overflow-x: hidden;
   background: #efefef;
   font-size: 14px;
   color: #888;

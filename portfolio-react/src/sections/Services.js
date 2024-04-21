@@ -1,8 +1,6 @@
 import React from "react";
 import "../assets/css/service.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 import ServiceItem from "../components/ServiceItem";
 import desktop from "../assets/images/icons8-desktop-50 (1).png";
 

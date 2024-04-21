@@ -1,13 +1,11 @@
 import React from "react";
 import "../assets/css/footer.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Footer() {
   const date = new Date().getFullYear();
   return (
-    <section className="footer-section">
+    <section className="footer-section" id="footer">
       <Container>
         <Row>
           <Col lg={5}>
@@ -43,7 +41,7 @@ export default function Footer() {
                   >
                     <span class="icon-twitter">
                       {" "}
-                      <i className="bi bi-twitter"></i>
+                      <i className="bi bi-twitter-x"></i>
                     </span>
                   </a>
                 </li>
@@ -110,7 +108,7 @@ export default function Footer() {
         </Row>
         <Row className="mt-5">
           <Col className="text-center">
-            <p>Copyright ©{date} All rights reserved to mojisola aramide</p>
+            <p>Copyright ©{date} All rights reserved to Mojisola Aramide</p>
           </Col>
         </Row>
       </Container>

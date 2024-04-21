@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../assets/css/contact.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Contact() {
   // State variables to hold form data and validation errors

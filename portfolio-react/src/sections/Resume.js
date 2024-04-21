@@ -1,9 +1,7 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import "../assets/css/resume.css";
 import ResumeItem from "../components/ResumeItem";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import aboutImage from "../assets/images/forabout.jpg";
 
 export default function Resume() {
@@ -16,7 +14,7 @@ export default function Resume() {
           </Col>
         </Row>
         <Row>
-          <Col lg={4} className="wow fadeInUp" data-wow-delay="1s">
+          <Col lg={4} className="wow fadeInUp" data-wow-delay=".1s">
             <img
               src={aboutImage}
               alt="resume placeholder"

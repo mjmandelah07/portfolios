@@ -1,9 +1,6 @@
 import React from "react";
 import "../assets/css/hero.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
+import { Container, Row, Col } from "react-bootstrap";
 export default function Hero() {
   return (
     <section
