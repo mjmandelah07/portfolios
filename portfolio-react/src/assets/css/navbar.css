@@ -8,7 +8,6 @@
   padding: 20px 0 0 0;
 }
 header {
-   overflow-x: hidden;
   position: relative;
   z-index: 1020;
 }
@@ -160,7 +159,7 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    top: 110%;
+    top: 105%;
     background: #161618;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
