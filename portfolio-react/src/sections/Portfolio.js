@@ -7,7 +7,9 @@ import tophcomfy from "../assets/images/tophcomfy.png";
 import portfolio from "../assets/images/portfolio.png";
 import cook from "../assets/images/cook-collectives.png"
 import user from "../assets/images/user.png";
+import digital from "../assets/images/72digital.png";
 import ShowCaseItem from "../components/ShowCaseItem";
+
 
 export default function Portfolio() {
   // Data representing each item
@@ -17,6 +19,11 @@ export default function Portfolio() {
       image: tophcomfy,
       title: "Coming soon  WebApp",
       link: "https://tophcomfyfashion.com",
+    },
+    {
+      image: digital,
+      title: "72 Digital Concept",
+      link: "https://marketing-websites.netlify.app",
     },
     {
       image: portfolio,
@@ -33,7 +40,6 @@ export default function Portfolio() {
       title: "User Generator WebApp",
       link: "https://users-info-generator.netlify.app",
     },
-    // { image: Image6, title: "Innovation Unleashed" },
   ];
   return (
     <section className="portfolio-section wow FadeInUp" id="portfolio">
