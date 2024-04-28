@@ -1,0 +1,50 @@
+@import url("https://use.typekit.net/psi1puv.css");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  background: #727272;
+  min-height: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+  background: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+a,
+button {
+  color: #1f1f1f;
+  outline: medium none;
+}
+
+a,
+.button {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
