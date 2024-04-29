@@ -5,8 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import spg from "../assets/images/spg.png";
 import tophcomfy from "../assets/images/tophcomfy.png";
 import portfolio from "../assets/images/portfolio.png";
-import user from "../assets/images/user.png";
 import blog from "../assets/images/blog.png";
+import melan from "../assets/images/melan.png";
 import digital from "../assets/images/72digital.png";
 import ShowCaseItem from "../components/ShowCaseItem";
 
@@ -36,9 +36,9 @@ export default function Portfolio() {
       link: "https://aramid-client-blog.onrender.com/#/",
     },
     {
-      image: user,
-      title: "User Generator WebApp",
-      link: "https://users-info-generator.netlify.app",
+      image: melan,
+      title: "showcase WebApp",
+      link: "https://melan-template.netlify.app",
     },
   ];
   return (
