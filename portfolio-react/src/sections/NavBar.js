@@ -122,11 +122,11 @@ export default function NavBar() {
           </Navbar.Collapse>
           <ul className="nav align-items-center ms-sm-2">
             <li className="nav-item position-relative ms-2 ms-sm-3 d-none d-sm-block">
-              <a class="btn btn-dark mb-0" href="#footer">
+              <a className="btn btn-dark mb-0" href="#footer">
                 Let's connect
               </a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <button
                 className="navbar-toggler ms-3 p-2 collapsed"
                 type="button"

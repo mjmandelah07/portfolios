@@ -5,8 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import spg from "../assets/images/spg.png";
 import tophcomfy from "../assets/images/tophcomfy.png";
 import portfolio from "../assets/images/portfolio.png";
-import cook from "../assets/images/cook-collectives.png"
 import user from "../assets/images/user.png";
+import blog from "../assets/images/blog.png";
 import digital from "../assets/images/72digital.png";
 import ShowCaseItem from "../components/ShowCaseItem";
 
@@ -31,9 +31,9 @@ export default function Portfolio() {
       link: "https://mojisola-aramide-portfolio.netlify.app",
     },
     {
-      image: cook,
-      title: " Cook Collective WebApp",
-      link: "https://mjmandelah07.github.io/group-5-binance-software-project",
+      image: blog,
+      title: "Personal Blog WebApp",
+      link: "https://aramid-client-blog.onrender.com/#/",
     },
     {
       image: user,
