@@ -99,6 +99,14 @@
     z-index: -2;
 }
 @media (max-width: 767px) {
+
+    .slider_area .single_slider .slider_text h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .slider_area .single_slider .slider_text span {
+        font-size: 16px;
+    }
   .slider_area .single_slider {
     height: 500px;
   }

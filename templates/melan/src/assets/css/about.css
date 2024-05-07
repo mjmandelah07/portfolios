@@ -1,0 +1,76 @@
+.about_me {
+  padding-top: 75px;
+  padding-bottom: 150px;
+  position: relative;
+}
+
+.about_me .about_large_title {
+  font-weight: 800;
+  font-size: 235px;
+  color: #f5f6f7;
+  position: absolute;
+  left: 21%;
+  top: 0;
+  line-height: 1;
+  z-index: 1;
+}
+.about_me .about_e_details{
+    position: relative;
+    z-index: 1000;
+}
+.about_me .about_e_details h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #001D38;
+}
+.about_me .about_e_details p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #727272;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+.boxed-btn3 {
+    background: #615CFD;
+    color: #fff;
+    display: inline-block;
+    padding: 14px 38px;
+    font-family: "Muli", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.about_me .about_img {
+    position: relative;
+}
+.about_me .about_img .color_pattern {
+    position: absolute;
+    right: -80px;
+    top: -123px;
+    z-index: -1;
+}
+.about_me .about_img .my_Pic img {
+    width: 100%;
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .about_me .about_img .color_pattern {
+        right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .about_me {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+        .about_me .about_e_details {
+        margin-bottom: 30px;
+    }
+}

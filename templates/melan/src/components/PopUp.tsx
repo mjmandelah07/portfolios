@@ -15,8 +15,8 @@ const PopUp: React.FC<PopUpProps> = ({ image, alt, show, onHide }) => {
       <Modal
         show={show}
         onHide={onHide}
-        size="lg"
         centered
+        dialogClassName="modal-100w modal-100h"
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton></Modal.Header>

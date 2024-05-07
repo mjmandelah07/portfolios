@@ -1,0 +1,34 @@
+.counter_area {
+  padding-bottom: 120px;
+  padding-top: 75px;
+}
+.counter_area .single_counter {
+  border: 1px solid #e8e8e8;
+  padding: 50px 0 43px 0;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.counter_area .single_counter h3 {
+  margin-bottom: 16px;
+}
+.counter_area .single_counter h3 span {
+    color: #615CFD;
+    font-size: 50px;
+    font-weight: 700;
+}
+.counter_area .single_counter p {
+    font-size: 15px;
+    color: #001D38;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .counter_area {
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
+  .counter_area .single_counter h3 span {
+  font-size: 35px;
+}
+
+}

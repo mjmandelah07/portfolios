@@ -1,0 +1,24 @@
+.discuss_projects {
+  background: #001d38;
+  padding: 150px 0 50px 0;
+}
+.discuss_projects .project_text h3 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+.discuss_projects .project_text p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    margin-top: 12px;
+}
+@media (max-width: 767px) {
+  .discuss_projects {
+    padding: 50px 0 50px 0;
+  }
+  .discuss_projects .project_text h3 {
+    font-size: 38px;
+  }
+}

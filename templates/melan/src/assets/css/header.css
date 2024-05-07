@@ -21,11 +21,11 @@ header {
   font-size: 24px;
   color: #ffffff;
   font-weight: 700;
-  padding: 3px;
+  padding: 7px 4px 3px 3px;
   width: 40px;
   height: 40px;
   margin-top: -4px;
-  line-height: 40px;
+  line-height: 20px;
   text-align: center;
   border: 2px solid #fff;
 }
@@ -56,13 +56,19 @@ header {
     border-radius: 0px;
 
 }
+.nav-item .btn:hover {
+    background: #001D38;
+
+    color: #fff;
+  
+}
 /* Hamburger styling start */
 .navbar-toggler {
   box-shadow: none;
-  border: none;
+  border: none !important;
 }
 .navbar-toggler:focus {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 /* Define the shape and color of the hamburger lines */
@@ -167,7 +173,7 @@ header {
     left: 0;
     right: 0;
     top: 105%;
-    background: #161618;
+    background: #001D38;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
   .navbar-expand-xl .navbar-collapse .navbar-nav .nav-link {
@@ -203,7 +209,7 @@ header {
   }
 
   header.header-sticky-on {
-    background-color: #000;
+    background-color: #001D38;
     position: fixed;
     width: 100%;
     left: 0;
@@ -218,6 +224,7 @@ header {
   }
   .header-sticky-on .logo {
     color: #fff !important;
+    padding: 9px 4px 3px 3px;
     border-color: #fff;
     top: -14px;
     width: 45px;
@@ -230,6 +237,10 @@ header {
     color: #D465EF !important;
   }
   .header-sticky-on .nav-link:hover {
+    color: #D465EF !important;
+  }
+  .header-sticky-on .nav-item .btn:hover {
     color: #D465EF;
+    background-color: #fff;
   }
 }

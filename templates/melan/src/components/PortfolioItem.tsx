@@ -17,6 +17,9 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ image, title, alt }) => {
   const handleCloseModal = () => {
     setShow(false);
   };
+   const handleHoverClick = () => {
+     setShow(true);
+   };
   return (
     <div className="single_Portfolio">
       <div className="portfolio_thumb">
@@ -25,7 +28,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ image, title, alt }) => {
       {show && (
         <PopUp show={show} image={image} alt={alt} onHide={handleCloseModal} />
       )}
-      <div className="portfolio_hover">
+      <div className="portfolio_hover" onClick={() => handleHoverClick()}>
         <div className="title">
           <h3>{title}</h3>
         </div>

@@ -1,0 +1,96 @@
+.bradcam_area {
+  background-size: cover;
+  background-position: bottom;
+  padding: 233px 0 175px 0;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+.bradcam_bg_1 {
+  background-image: url("../images/bradcam.png.webp");
+}
+.bradcam_area h3 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.contact-section {
+    padding: 130px 0 100px;
+}
+.contact-title {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-contact .form-control {
+    border: 1px solid #e5e6e9;
+    border-radius: 0px;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 13px;
+    background: transparent;
+    color: #495057;
+}
+.form-contact textarea {
+    border-radius: 0px;
+    height: 100% !important;
+}
+.form-contact .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    color: #495057;
+}
+.boxed-btn {
+    background: #fff;
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: "Muli", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #615CFD;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #615CFD !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact-info {
+    margin-bottom: 25px;
+}
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+.contact-info__icon {
+    margin-right: 20px;
+}
+.contact-info__icon i, .contact-info__icon span {
+    color: #8f9195;
+    font-size: 27px;
+}
+.contact-info .media-body h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #2a2a2a;
+}
+.contact-info .media-body p {
+    color: #8a8a8a;
+}
+@media (max-width: 767px) {
+  .bradcam_area {
+    padding: 120px 0;
+  }
+  .bradcam_area h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+    .contact-section {
+        padding: 70px 0 40px;
+    }
+}
+
