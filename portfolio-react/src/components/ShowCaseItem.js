@@ -2,7 +2,7 @@ import { Col } from "react-bootstrap";
 
 const ShowCaseItem = ({ image, title, link }) => {
   return (
-    <Col sm={6} md={4}>
+    <Col sm={6} md={4} className="portfolio-item">
       <div className="card card-img-scale card-element-hover card-img-blur overflow-hidden">
         <div className="card-img-scale-wrapper">
           <div className="card-img-overlay hover-element d-flex align-items-center">

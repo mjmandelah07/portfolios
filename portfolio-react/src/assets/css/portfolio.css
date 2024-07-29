@@ -51,6 +51,9 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.portfolio-item img{
+    max-height: 400px;
+}
 .portfolio-section .card .card-img-overlay {
     z-index: 2;
 }
