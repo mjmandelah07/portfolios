@@ -9,6 +9,9 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #efefef;
 }
+.work-header {
+    margin-top: 0;
+}
 .work .resume-meta {
     font-size: 14px;
     vertical-align: middle;
@@ -44,5 +47,10 @@
 @media (min-width: 1199.98px) {
 .resume-section{
     padding: 70px 0;
+}
+}
+@media  (max-width: 912px) {
+.work-header {
+    margin-top: 1rem;
 }
 }

@@ -22,7 +22,7 @@ export default function Resume() {
             />
           </Col>
           <Col lg={7} className="ms-auto wow fadeInUp">
-            <h3 className="mb-5">Work Experience</h3>
+            <h3 className="mb-5 work-header">Work Experience</h3>
             <ResumeItem
               title="Front End Developer"
               company="Tophcomfyfashion"
