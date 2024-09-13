@@ -129,7 +129,7 @@ export default function About() {
                   <Col>
                     <div className="skill">
                       <ul className="logo-list">
-                        <li id="postgreSQL">
+                        <li id="postgres">
                           {" "}
                           <h3>PostgreSQL</h3>
                         </li>

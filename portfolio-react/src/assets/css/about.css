@@ -73,8 +73,8 @@
 .logo-list #postgres:before {
   background-image: url("https://img.icons8.com/color/48/postgreesql.png");
 }
-.logo-list #svelte:before {
-  background-image: url("https://img.icons8.com/doodle/48/svetle.png");
+.logo-list #react:before {
+  background-image: url("https://img.icons8.com/?size=100&id=123603&format=png&color=000000");
 }
 .logo-list #ui:before {
   background-image: url("https://img.icons8.com/color/48/material-ui.png");
