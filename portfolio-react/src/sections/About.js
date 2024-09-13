@@ -129,7 +129,7 @@ export default function About() {
                   <Col>
                     <div className="skill">
                       <ul className="logo-list">
-                        <li id="postgres">
+                        <li id="postgreSQL">
                           {" "}
                           <h3>PostgreSQL</h3>
                         </li>
@@ -139,9 +139,9 @@ export default function About() {
                   <Col>
                     <div className="skill">
                       <ul className="logo-list">
-                        <li id="svelte">
+                        <li id="react">
                           {" "}
-                          <h3>Svelte</h3>
+                          <h3>React JS</h3>
                         </li>
                       </ul>
                     </div>
