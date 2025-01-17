@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/about.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import aboutImage from "../assets/images/forabout.jpg";
-import myCv from "../assets/files/mojisola_aramide_cv.pdf";
+import myCv from "../assets/files/Mojisola-Aramide-Resume.pdf";
 
 export default function About() {
   return (

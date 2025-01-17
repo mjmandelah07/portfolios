@@ -24,21 +24,31 @@ export default function Resume() {
           <Col lg={7} className="ms-auto wow fadeInUp">
             <h3 className="mb-5 work-header">Work Experience</h3>
             <ResumeItem
-              title="Front End Developer"
-              company="Tophcomfyfashion"
+              title="Backend Developer"
+              company="Aparte"
               location="Lagos, Nigeria"
               jobType="Fulltime"
-              start="April 2024"
+              start="November 2024"
+              end="Present"
+            />
+
+            <ResumeItem
+              title="Backend Developer"
+              company="Yahshuud Investment Management"
+              location="Lagos, Nigeria"
+              jobType="Contract"
+              start="May 2024"
               end="Present"
             />
             <ResumeItem
-              title="Lead Backend Developer"
-              company="WinnoV8"
+              title="Lead Front End Developer"
+              company="TOPH"
               location="Lagos, Nigeria"
-              jobType="Fulltime"
-              start="October 2023"
-              end="March 2023"
+              jobType="Part time"
+              start="April 2024"
+              end="Present"
             />
+
             <ResumeItem
               title="Full Stack Software Engineer (Intern)
 "
@@ -48,14 +58,7 @@ export default function Resume() {
               start="October 2023"
               end="December 2023"
             />
-            <ResumeItem
-              title="Web Developer (contract)"
-              company="AIBOX SYSTEMS LIMITED"
-              location="Lagos, Nigeria"
-              jobType="Fulltime"
-              start="August 2023"
-              end="October 2023"
-            />
+
             <h3 className="mt-5 mb-3">Education</h3>
             <div className="resume-item d-flex work">
               <div>

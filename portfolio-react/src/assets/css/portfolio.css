@@ -1,89 +1,74 @@
 .portfolio-section {
   padding: 70px 0;
 }
-.portfolio-section .display-5 {
+.portfolio-section .title {
     font-weight: 500;
+    font-size: 36px;
+    color: #000000;
+} 
+.portfolio-section .title span {
+    color: #96bb7c;
 } 
 
 
 /* Showcase Card styling */
-.portfolio-section .card {
-    --bs-card-title-color: #202124;
-    --bs-card-subtitle-color: ;
-    --bs-card-border-width: 0;
-    --bs-card-border-color: #dce0e5
-    --bs-card-border-radius: 0.4rem;
-    --bs-card-box-shadow: ;
-    --bs-card-inner-border-radius: 0.4rem;
-    --bs-card-cap-padding-y: 1.25rem;
-    --bs-card-cap-padding-x: 1.25rem;
-    --bs-card-cap-bg: #fff;
-    --bs-card-cap-color: ;
-    --bs-card-height: ;
-    --bs-card-color: #606261;
-    --bs-card-bg: #606261;
-    color: #606261;
-    background-color: #fff;
-    border: var(--bs-card-border-width) solid #dce0e5;
-    border-radius: .4rem;
-}
-.portfolio-section .card.overflow-hidden, .tiny-slider.overflow-hidden {
-    will-change: transform;
-}
-.portfolio-section .card.card-img-scale .card-img-scale-wrapper {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+.portfolio-section .portfolio-item .card {
+    background-size: cover;
+    background-position: center;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 0px 20px 0px 20px;
+    --e-column-margin-right: 20px;
+    --e-column-margin-left: 20px;
+    padding: 250px 20px 50px 30px;
     position: relative;
-    overflow: hidden;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
-/* Initially hide the overlay and set transition properties */
-.portfolio-section .card.card-element-hover .hover-element {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    z-index: 9;
+.portfolio-section .portfolio-item .card .background-overlay{
+    transition: background 0.5s, border-radius 0.3s, opacity 0.5s;
+    background-color: transparent;
+    background-image: linear-gradient(360deg, #000000 40%, #00000000 65%);
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
-/* Show the overlay and adjust opacity when hovering over the card */
-.portfolio-section .card.card-element-hover:hover .hover-element {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+.portfolio-section .portfolio-item .card:hover .background-overlay{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #475746 0%, #96bb7c 100%);
+    opacity: 0.5;
 }
+
 .portfolio-item img{
     max-height: 400px;
 }
 .portfolio-section .card .card-img-overlay {
     z-index: 2;
+    margin-block-end: 20px;
 }
 .portfolio-section h5 {
     font-size: calc(1.275rem + 0.3vw);
-    font-weight: 700;
-    color: #96bb7c;
+    font-weight: 500;
+    color: #ffffff;
+    white-space: pre-line;
 }
 .portfolio-section .btn-white {
     background: #96bb7c;
     color: #fff;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 500;
+    background-color: #96bb7c;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #96bb7c;
+    padding: 10px 15px ;
+    margin-top: 10px;
 }
-.portfolio-section .card.card-img-scale .img-scale {
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-transform: scale(1.001);
-    transform: scale(1.001);
-}
-
-.portfolio-section .card.card-element-hover .card-text, .card.card-element-hover img {
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-/* Scale and blur the image when hovering over the card */
-.portfolio-section .card.card-img-blur:hover .img-blur {
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-}
-
-.portfolio-section .card.card-img-scale:hover .img-scale {
-    -webkit-transform: scale(1.03);
-    transform: scale(1.03);
+.portfolio-section .btn-white:hover {
+    color: #FFFFFF;
+    background-color: #00000000;
+    border-color: #FFFFFF;
 }
